@@ -9,8 +9,10 @@ array.
 
 ### Space Complexity
 The sorting algorithm used was Heap sort, however, the implementation provided is an in place sort and it does not use 
-recursion as a result the overall space complexity of this solution is O(N). Since, the only additional memory used were
-a two variables with the same size as the length of the array.
+recursion as a result the overall space complexity of this solution is O(1). Since the sorting is performed in place and
+no auxiliary memory is being used. However, there are two string variables that are used that grow in size. The total 
+length of these two variables is the same as the length of the array. Therefore, the overall space complexity for these
+auxiliary variables is O(N).
 
 ### Running Time Complexity
 The running time complexity of Heap sort is O(N log N). Heapify runs in O(log N). However, it is also building the 
