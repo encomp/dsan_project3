@@ -13,7 +13,7 @@ recursion as a result the overall space complexity of this solution is O(N). Sin
 a two variables with the same size as the length of the array.
 
 ### Running Time Complexity
-The running time complexity of Heap sort is O(N log N). Heapify runs in O(log N). However, you are also building the 
+The running time complexity of Heap sort is O(N log N). Heapify runs in O(log N). However, it is also building the 
 heap and that takes O(n). Thus, the overall time complexity would be O(N log N). After sorting the initial input one 
 additional traversal was required to create the array with two elements. The later iteration does not impact the overall 
 running time which is O(N log N).
