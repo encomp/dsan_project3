@@ -15,6 +15,7 @@ class RotatedSortedTest(unittest.TestCase):
     def setUp(self) -> None:
         self.rarray_1 = [6, 7, 8, 9, 10, 1, 2, 3, 4]
         self.rarray_2 = [6, 7, 8, 1, 2, 3, 4]
+        self.rarray_3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
     def test_search_in_rotated_array_one_number_6(self):
         self.assertEqual(self.linear_search(self.rarray_1, 6), rotated_array_search(self.rarray_1, 6))
@@ -55,6 +56,20 @@ class RotatedSortedTest(unittest.TestCase):
     def test_search_in_rotated_array_two_number_12(self):
         self.assertEqual(-1, rotated_array_search(self.rarray_2, 12))
 
+    def test_search_in_sorted_array_two_number_5(self):
+        self.assertEqual(self.linear_search(self.rarray_3, 5), rotated_array_search(self.rarray_3, 5))
+
+    def test_search_in_sorted_array_two_number_1(self):
+        self.assertEqual(self.linear_search(self.rarray_3, 1), rotated_array_search(self.rarray_3, 1))
+
+    def test_search_in_sorted_array_two_number_8(self):
+        self.assertEqual(self.linear_search(self.rarray_3, 8), rotated_array_search(self.rarray_3, 8))
+
+    def test_search_in_sorted_array_two_number_10(self):
+        self.assertEqual(self.linear_search(self.rarray_3, 10), rotated_array_search(self.rarray_3, 10))
+
+    def test_search_empty_array(self):
+        self.assertEqual(-1, rotated_array_search([], 10))
 
 if __name__ == '__main__':
     unittest.main()

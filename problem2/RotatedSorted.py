@@ -7,6 +7,8 @@ def rotated_array_search(input_list, number):
     Returns:
        int: Index or -1
     """
+    if len(input_list) == 0:
+        return -1
     return binary_search(input_list, number, 0, len(input_list) - 1)
 
 

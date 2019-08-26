@@ -9,7 +9,8 @@ always advance at the end of the loop. if the left element is bigger to the righ
 Lastly if the the left and right crosses the direction of the right pointer is changed. 
 
 ### Space Complexity
-The space complexity of the solution is O(N). Since the array is being sorted in place. 
+The space complexity of the solution is O(1), since the array is being sorted in place and there is no auxiliary space 
+being used. But it uses O(N) if we consider the input list provided to the function.
 
 ### Running Time Complexity
 The running time complexity is O(N). Since, there is only a single traversal of the array with length "N".
